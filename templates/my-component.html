@@ -1,0 +1,14 @@
+<div>
+    Some <span [style.color]="awesomeInput.value === 'yes' ? 'blue' : 'green'">{{text}}</span>
+    which is <span [class.is-awesome]="(awesomeInput.value === 'yes') || (awesomeInput.value === 'Yes')"> SO FACKING AWESOME </span> !!! w8 why aint i red?!
+</div>
+<br>
+<div>
+    Am i Awesome? 
+    <input type="text" #awesomeInput (keyup)="0">
+</div>
+<br>
+<div>
+    <button [disabled]="awesomeInput.value !== 'yes'"> Only enabled if 'yes' was entered</button>
+</div>
+<test></test>
